@@ -1,63 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <article>
-            <header>
-                <h1> This is my first Header</h1>
-            </header>
-        </article>
-<style type = text/css>
-body  {background-color: blue; }
+<head>
+        <style>
+            .center {
+                text-align: center;
+                border:
+                 3px solid rgb(7, 14, 7);
+            }
+            
+         </style>
+<article>
+    <header>            
+        <div class="center">
+        <p><h1><b><i> This is my first Header</b></i></h1></p>
+        </div>
+    </header>
+</article>
+    <style type = text/css>
+        body  {background-color: #8e8ec0; }
 
-</style>
+    </style>
         <meta charset="UTF-8">
         <meta name=""viewport"content="width=device-width, initial-scale=1.0">
         <title> simple grid layout</title>
-<style>
+    <style>
 
-    .grid-container {
+    .grid-container 
+    {
         display: grid;
-        grid-template-column; auto auto;     }
+        grid-template-column; auto auto;
+        grid-gap: 5px;
+        padding: 5px;     
+    }
 
-    .grid-item {
-        background-color: red;
+    .grid-item 
+    {
+        background-color: rgb(241, 238, 238);
         border: 2px solid;
-        padding: 8px;
-        
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;        
     }
 
     .flex-container {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding; 18 px;
-        background: lightgrey;
+        padding; 10 px;
+        background: white;
 
     }
     .flex.item {
         background-color: white;
-        border; 1px solid;
-
-    
-    }
+        border; 10px solid;
+        margin: 10px;
+        font-size-: 20px;
+        text-align: center;
+        flex-grow: 5;
+        }
         
-</style>
-<link rel="stylesheet" type=""text.css" href=""style.css">
-    </head>
+    </style>
+    <link rel="stylesheet" type="text.css" href="style.css">
+</head>
     <body>
+        <h3> This is the main reference </h3>
+        <main>
           <nav>  
-        <a href="https://www.google.com/"> google.com </a>
+        <a href="https://www.google.com/"> <h2>Google.com </h2></a>
     </nav>
-            
-        <p style="color: rgb(10, 10, 6);"> This is my first webpage.</p>
+         </main>    
+        <p style="color: rgb(10, 10, 6);"> This is my first Grid.</p>
         <div class="grid-container">
         <div class="grid-item">1</div>
         <div class="grid-item">2</div>
         <div class="grid-item">3</div>
         <div class="grid-item">4</div>
         <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-        <div class="flex-container">
+        <div class="grid-item">6</div><br>
+            <div class="flex-container">
             <div class="flex-item">1</div>
             <div class="flex-item">2</div>
             <div class="flex-item">3</div>
@@ -65,6 +85,12 @@ body  {background-color: blue; }
             <div class="flex-item">5</div>
             <div class="flex-item">6</div>    
     </div>
-
+        
+            <footer> 
+                    
+                 </style>
+                <h2><p> Samsun Verma</p></h2>
+                <a href="mailto: samsunverma2013@gmail.com"> samsunverma2013@gmail.com</a>
+            </footer>
     </body>
 </html>
